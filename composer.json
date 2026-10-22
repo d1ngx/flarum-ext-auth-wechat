@@ -1,0 +1,23 @@
+{
+    "name": "d1ngx/flarum-ext-auth-wechat",
+    "description": "WeChat website OAuth for Flarum 2 and FoF OAuth, preserving legacy UnionID bindings.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0",
+        "fof/oauth": "^2.0",
+        "league/oauth2-client": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {"D1ngX\\WechatOAuth\\": "src/"}
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "WeChat OAuth",
+            "icon": {"name": "fab fa-weixin", "backgroundColor": "#07c160", "color": "#ffffff"}
+        }
+    },
+    "scripts": {"test": "php tests/run.php"},
+    "config": {"sort-packages": true}
+}

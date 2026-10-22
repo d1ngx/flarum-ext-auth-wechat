@@ -1,0 +1,16 @@
+fof-oauth:
+  lib:
+    providers:
+      wechat: 微信
+  admin:
+    settings:
+      providers:
+        wechat:
+          description: 微信开放平台网站应用扫码登录。保持原应用及 UnionID 绑定。
+          client_id_label: 网站应用 AppID
+          client_secret_label: 网站应用 AppSecret
+  forum:
+    providers:
+      wechat: 微信
+    log_in:
+      with_wechat_button: 微信登录

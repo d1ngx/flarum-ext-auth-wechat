@@ -1,0 +1,16 @@
+fof-oauth:
+  lib:
+    providers:
+      wechat: WeChat
+  admin:
+    settings:
+      providers:
+        wechat:
+          description: WeChat Open Platform website QR login. Preserves legacy UnionID bindings.
+          client_id_label: Website AppID
+          client_secret_label: Website AppSecret
+  forum:
+    providers:
+      wechat: WeChat
+    log_in:
+      with_wechat_button: Log in with WeChat
